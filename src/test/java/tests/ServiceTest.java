@@ -9,7 +9,6 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 
 import static org.hamcrest.Matchers.*;
 
@@ -68,4 +67,18 @@ public class ServiceTest {
                 statusCode(200).log().all();
 
     }
+
+    @Test
+    public void test_AUTH_1(){
+
+        given().
+                header("X-RapidAPI-Key","b6031ba2bcmsh6a4d56369a56bb5p17cb66jsnca577790d09b").
+                header("X-RapidAPI-Host","wft-geo-db.p.rapidapi.com").
+                get("https://wft-geo-db.p.rapidapi.com/v1/geo/cities").
+                then().
+                statusCode(200).
+                log().all();
+    }
+
+
 }

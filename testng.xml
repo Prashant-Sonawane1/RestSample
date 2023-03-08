@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/My Projects/RESTAssuredAutomation/src/test/java/tests/ServiceTest.java">
+        <classes><class name="tests.ServiceTest">
+            <methods>
+                <include name="testCase1"/>
+                <include name="testCase2"/>
+                <include name="testCase3"/>
+                <include name="test_POST_1"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
